@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ejemplo de JavaScript</h1>
+    <script>
+        var nombre = prompt("Teclea tu nombre:","Sonia");
+        var estudio = prompt(nombre+" teclea el ciclo que estás estudianto:");
+
+        if (estudio == "ASIR" )
+        {
+            pregunta = confirm(nombre+" quieres trabajar de informático?");
+            if (pregunta == true )
+            {
+                document.write(nombre+" vas a trabajar como administrador de sistemas")
+            }
+            else {
+                document.write("Que haces aqui? "+nombre)
+            }
+
+        }
+
+        else if (estudio == "DAM" )
+        {
+            pregunta = confirm(nombre+" quieres trabajar de informático?");
+            if (pregunta == true )
+            {
+                document.write(nombre+" vas a trabajar como Desarrollaras videojuegos")
+            }
+            else {
+                document.write("Que haces aqui? "+nombre)
+            }
+
+        }
+
+        else if (estudio == "SMR" )
+        {
+            pregunta = confirm(nombre+" quieres trabajar de informático?");
+            if (pregunta == true )
+            {
+                document.write(nombre+" vas a trabajar como Desarrollaras estudiaras ASIR o DAM")
+            }
+            else {
+                document.write("Que haces aqui? "+nombre)
+            }
+
+        }
+        
+    </script>
+
+</body>
+</html>
