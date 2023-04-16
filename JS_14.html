@@ -14,14 +14,16 @@
 
     <script>
         var numero = prompt("Teclea un numero entero:");
-        var comprobacion = isNaN(numero);
+        var conv_num = parseFloat(numero);
+        var comprobacion = isNaN(conv_num);
 
         if (comprobacion == false) {
-            document.write("Dato correcto. Valor= " + numero)
+            document.write("Dato correcto. Valor = " + numero)
         }
         else {
             document.write("El valor tecleado " + numero + " no es un numero entero.");
         }
+        
     </script>
 
 </body>

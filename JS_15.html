@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ejemplo de JavaScript</h1>
+
+    <script>
+        var num1 = prompt("Teclea un numero real:");
+        var num2 = prompt("Teclea el segundo numero:")
+        var conv_num1 = parseFloat(num1);
+        var conv_num2 = parseFloat(num2);
+        var comprobacion = isNaN(conv_num1);
+        var comprobacion2 = isNaN(conv_num2);
+        
+        if (comprobacion == false && comprobacion2 == false) {
+            var division = num1 / num2;
+            document.write("Dato correcto. cociente = " + division);
+        }
+        else {
+            document.write("Algunos de los valores tecleados no es un numero");
+        }
+        
+    </script>
+
+</body>
+
+</html>

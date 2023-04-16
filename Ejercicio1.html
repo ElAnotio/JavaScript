@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+
+    var forma = prompt("Elige entre estas 3 formas: cuadrado, rectangulo o circulo.");
+
+    if (forma == "cuadrado"){
+
+            var lado = prompt("Di la medida de lados:");
+            var perimetro = lado * 4;
+            var area = lado * lado;
+            document.write("El perimetro del cuadrado es: "+perimetro+" y el area es: "+area);
+        }
+        else if (forma == "rectangulo"){
+            var altura = prompt("Di la medida de la altura:"); 
+            var base = prompt("Y ahora la base");
+            var perimetro = 2 * base + 2 * altura;
+            var area = base * altura;
+            document.write("El perimetro del rectangulo es: "+perimetro+" y el area es: "+area);
+        }
+        else if ( forma == "circulo"){
+            var radio = prompt("Di el radio del circulo");
+            var perimetro = 2*3.14*radio;
+            var area = 3.14*radio*radio;
+            document.write("El perimetro del circulo es: "+perimetro+" y el area es: "+area);
+        }
+
+    else{
+        document.write("No es ninguno, escribelo bien tonto.")
+    }
+
+    </script>
+</body>
+</html>
