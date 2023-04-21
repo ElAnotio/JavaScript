@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ejemplo de JavaScript</h1>
+
+    <script>
+
+        var num_mes = parseInt(prompt("Dime un numero del mes: "));
+
+        if (num_mes > 0){
+        var nom_mes = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre",
+                        "Octubre","Noviembre","Diciembre"];
+        var resta = num_mes-1;
+        document.write("El mes que has seleccionado es: "+nom_mes[resta]);
+        }
+        else {
+            document.write("Ese numero no equivale a ningun mes, ¿contento Juan7? 😒😒😒");
+        }
+    </script>
+
+</body>
+</html>
