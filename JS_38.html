@@ -12,18 +12,11 @@
 
     <script>
 
-        var frase = prompt("Escribe la frase que quieras:");
+        var array = ["uno","dos","tres"];
 
-        var array = frase.split(" ");
+        var cadena = array.join("|");
 
-        var num_frase = array.length;
-
-        document.write("La frase "+" '"+frase+"'"+" tiene "+num_frase+" palabras."+"</br>"+"</br>");
-
-        var frase = array.join("</br>")
-
-        document.write(frase);
-        
+        document.write("La cadena es: "+cadena);
 
     </script>
     
