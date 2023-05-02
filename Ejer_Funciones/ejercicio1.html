@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Ejercicio 1</h1>
+
+    <script>
+
+        // Escribir el código de una función a la que se pasa como argumentos/parámetros un número
+        // entero y devuelve como resultado una cadena de texto que indica si el número es par o impar.
+        // Mostrar por pantalla el resultado devuelto por la función.
+
+        var num = parseInt(prompt("Escribe un numero."));
+
+        function par_impar() {
+            var calculo = num % 2;
+            if (calculo == 0) {
+                var respuesta = "El numero es par";
+            } else {
+                var respuesta = "El numero es impar";
+            }
+            return respuesta;
+        }
+
+        var respuesta = par_impar();
+        document.write(respuesta);
+        
+    </script>
+
+</body>
+
+</html>

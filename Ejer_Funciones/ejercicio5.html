@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ejercicio 5</h1>
+
+    <script>
+    // Pedir al usuario un número, que debe ser del 1 al 10.
+    // Escribir una función a la que se le pase dicho número por parámetros y que, usando el bucle
+    // switch, devuelva una cadena de texto con la traducción en inglés del mismo. Si es cualquier otro
+    // número, deberá indicar que es un error.
+    // Mostrar por pantalla el resultado devuelto por la función.  
+
+    function ingles(){
+
+        var numero = prompt("Escibre un numero del 1 al 10");
+        if (numero >= 1 && numero <= 10){
+            switch(numero){
+                case "1":
+                document.write("El numero es one");
+                break;
+                case "2":
+                document.write("El numero es two");
+                break;
+                case "3":
+                document.write("El numero es three");
+                break;
+                case "4":
+                document.write("El numero es four");
+                break;
+                case "5":
+                document.write("El numero es five");
+                break;
+                case "6":
+                document.write("El numero es six");
+                break;
+                case "7":
+                document.write("El numero es seven");
+                break;
+                case "8":
+                document.write("El numero es eight");
+                break;
+                case "9":
+                document.write("El numero es nine");
+                break;
+                case "10":
+                document.write("El numero es ten");
+                break;
+            }
+        }
+        else {
+            document.write("Eso no es un numero del 1 al 10")
+        }
+
+    }
+    
+    ingles()
+    </script>
+
+</body>
+</html>

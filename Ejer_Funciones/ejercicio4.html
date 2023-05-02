@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Ejercicio 4</h1>
+
+    <script>
+
+    // Tras pedir tres números al usuario, escribir una función a la que se le pasen esos 3 números por
+    // parámetros y devuelva el menor de esos números que se habrá calculado usando el objeto Math.
+    // Mostrar por pantalla el resultado que devuelve dicha función 
+
+    var num1 = parseInt(prompt("Dime el primero de los tres numeros:"));
+    var num2 = parseInt(prompt("Dime el segundo de los tres numeros:"));
+    var num3 = parseInt(prompt("Dime el tercero de los tres numeros:"));
+
+    function menores(){
+    var menor1 = Math.min(num1,num2);
+    var menor2 = Math.min(menor1,num3);
+
+    document.write("El menor de los numeros: "+num1+", "+num2+", "+num3+" es: "+menor2);
+    }
+
+    menores();
+    
+
+    </script>
+    
+</body>
+</html>
