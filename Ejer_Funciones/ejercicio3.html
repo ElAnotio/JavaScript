@@ -21,40 +21,32 @@
         // Ejemplos de palíndromos complejos: "La ruta nos aporto otro paso natural", “Amad a la dama”
 
 
-        var frase = prompt("Di tu frase")
-        function palindromo() {
+        var frase = prompt("Di tu frase");
 
+        function palindromo(frase) {
             var cadenaOriginal = frase.toLowerCase();
-
             var letrasEspacios = cadenaOriginal.split("");
-
             var cadenaSinEspacios = "";
-            for (i in letrasEspacios) {
-                if (letrasEspacios[i] != " ") {
-                    cadenaSinEspacios += letrasEspacios[i];
-                }
-            }
-            var letras = cadenaSinEspacios.split("");
-            var letrasReves = cadenaSinEspacios.split("").reverse();
+            var copiacadenaSinEspacios = "";
 
-            var iguales = true;
-            for (i in letras) {
-                if (letras[i] == letrasReves[i]) {
+            for (var i = 0; i < cadenaOriginal.length; i++) {
+                if (cadenaOriginal[i] != " ") {
+                    cadenaSinEspacios += cadenaOriginal[i];
+                    copiacadenaSinEspacios += cadenaOriginal[i];
+                }
+            }
+            var cadenaArraySinEspaciosSeparada = cadenaSinEspacios.split("").join("");
+            var letrasReves = copiacadenaSinEspacios.split("").reverse().join("");
 
-                }
-                else {
-                    iguales = false;
-                }
-            }
-            if (iguales) {
-                var resultado += " es un palíndromo";
-            }
-            else {
-                resultado += " no es un palíndromo";
-            }
+            if (cadenaArraySinEspaciosSeparada == letrasReves)
+            return sol = "es un palíndromo."+"<br>";
+             else
+            return sol = "no es un palíndromo"+"<br>";
         }
 
-        var resultado = palindromo()
+        document.write("La frase " + palindromo(frase) + "<br>");
+
+        //ni de coña saco esto jose... 🤕
 
     </script>
 
