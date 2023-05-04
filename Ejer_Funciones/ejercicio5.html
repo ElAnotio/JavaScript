@@ -17,9 +17,10 @@
     // número, deberá indicar que es un error.
     // Mostrar por pantalla el resultado devuelto por la función.  
 
-    function ingles(){
+    var numero = prompt("Escibre un numero del 1 al 10");
 
-        var numero = prompt("Escibre un numero del 1 al 10");
+    function ingles(numero){
+        
         if (numero >= 1 && numero <= 10){
             switch(numero){
                 case "1":
@@ -59,8 +60,8 @@
         }
 
     }
+    ingles(numero)
     
-    ingles()
     </script>
 
 </body>

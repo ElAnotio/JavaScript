@@ -20,8 +20,8 @@
 
         var num = parseInt(prompt("Escribe un numero."));
 
-        function par_impar() {
-            var calculo = num % 2;
+        function par_impar(hola) {
+            var calculo = hola % 2;
             if (calculo == 0) {
                 var respuesta = "El numero es par";
             } else {
@@ -30,7 +30,7 @@
             return respuesta;
         }
 
-        var respuesta = par_impar();
+        var respuesta = par_impar(num);
         document.write(respuesta);
         
     </script>

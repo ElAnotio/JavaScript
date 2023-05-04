@@ -20,14 +20,13 @@
     var num2 = parseInt(prompt("Dime el segundo de los tres numeros:"));
     var num3 = parseInt(prompt("Dime el tercero de los tres numeros:"));
 
-    function menores(){
+    function menores(num1,num2,num3){
     var menor1 = Math.min(num1,num2);
     var menor2 = Math.min(menor1,num3);
-
-    document.write("El menor de los numeros: "+num1+", "+num2+", "+num3+" es: "+menor2);
+    return menor2;
     }
-
-    menores();
+    var numeros = menores(num1,num2,num3)
+    document.write("El menor de los numeros: "+num1+", "+num2+", "+num3+" es: "+numeros);
     
 
     </script>
