@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        Nombre: <input type="text" class="nombre"> 
+        Apellidos: <input type="text" class="apellidos">
+        <button type="button" onclick="texto()">Rellenar datos</button>
+    </form>
+    
+    <div id="mensaje"></div>
+    
+    <script>
+        function texto(){
+            var nombre = document.getElementsByClassName("nombre").value;
+            var apellidos = document.getElementsByClassName("apellidos").value;
+            var mensaje = "Hola " + nombre + " " + apellidos + ", gracias por rellenar el formulario.";
+            document.getElementById("mensaje").innerHTML = mensaje;
+        }
+    </script>
+    
+</body>
+</html>
