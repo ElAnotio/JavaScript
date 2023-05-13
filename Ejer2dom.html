@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .mensaje{
+            border: 1px solid black;
+            background-color: cornflowerblue;
+        }
+    </style>
 </head>
 
 <body>
@@ -76,19 +82,17 @@
         te anima la afición.</p>
 
         <script>
-
-            function texto(){
+            function texto() {
                 var enlaces = document.getElementsByTagName("a");
                 var contar_enlaces = enlaces.length;
-
-                var mensaje = "Numero de enlaces =" + contar_enlaces + "<br>" + 
-                "El penultimo enlace apunta a: ";
-                
-                document.getElementsByClassName("mensaje").innerHTML = mensaje;
+        
+                var mensaje = "Numero de enlaces = " + contar_enlaces + "<br>" +
+                    "El penultimo enlace apunta a: " + enlaces[contar_enlaces - 2];
+        
+                document.getElementsByClassName("mensaje")[0].innerHTML = mensaje;
             }
-
-            texto()
-
+        
+            texto();
         </script>
 
 
