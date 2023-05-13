@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Haz clic en el botón para ver la fecha y hora.</p>
+
+    <button onclick="verfecha()">Que hora es</button>
+
+    <script>
+
+        function verfecha(){
+            document.getElementById('demo').innerHTML=date();
+        }
+
+    </script>
+
+    <p id="demo"></p>
+    
+</body>
+</html>
