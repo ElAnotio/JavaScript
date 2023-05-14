@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Ejemplo de JavaScript</h1>
+
+    <div id="caja">
+        <p>esto es el contenido de la caja</p>
+    </div>
+
+    <button type="button" id="azul" onclick="color_a()">Azul</button>
+    <button type="button" id="Verde" onclick="color_v()">Verde</button>
+    <button type=" button" id="Rojo" onclick="color_r()">Rojo</button>
+
+    <script>
+        function color_a() {
+            var elemento = document.getElementById('caja');
+            elemento.style.color = 'blue';
+        }
+
+        function color_v() {
+            var elemento = document.getElementById('caja');
+            elemento.style.color = 'green';
+
+        }
+
+        function color_r() {
+            var elemento = document.getElementById('caja');
+            elemento.style.color = 'red';
+
+        }
+    </script>
+
+</body>
+
+</html>

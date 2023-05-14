@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Tolkien&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Ejemplo de JavaScript</h1>
+
+    <div id="texto">
+        <p>esto es el contenido de la caja</p>
+    </div>
+
+    <label for="fuente">Selecciona una fuente:</label>
+    <select id="fuente" onchange="cambiarFuente()">
+        <option value="Arial">Arial</option>
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Cambria">Cambria</option>
+        <option value="Geneva">Geneva</option>
+        <option value="Pacifico">Pacifico</option>
+        <option value="Tolkien">Tolkien</option>
+    </select>
+
+    <script>
+        function cambiarFuente() {
+            var fuenteSeleccionada = document.getElementById("fuente").value;
+            document.getElementById("texto").style.fontFamily = fuenteSeleccionada;
+        }
+    </script>
+
+</body>
+
+</html>
