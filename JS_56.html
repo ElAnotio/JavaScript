@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+
+    <h1>Ejemplo de JavaScript</h1>
+
+    <div>
+        <p>Se mostrará una alerta en 5 segundos.</p>
+    </div>
+
     <script>
-        //Ejercicio3: Pide el nombre y la edad y lo concatena 
-        var nombre;
-        nombre=prompt("Ingresa tu nombre");
-        edad=prompt("Ingresa la edad")
+        function contador() {
+            alert('Han pasado 5 segundos makinola');
+        }
 
-        document.write(nombre+" "+edad);
-
+        setTimeout(contador, 5000);
     </script>
+
 </body>
+
 </html>
